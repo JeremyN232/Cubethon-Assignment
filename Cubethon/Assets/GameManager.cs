@@ -5,6 +5,11 @@ public class GameManager : MonoBehaviour
 {
     bool gameState = false;
     public float delay = 1;
+    public GameObject completeLevelUI;
+
+    public void completeLevel(){
+        completeLevelUI.SetActive(true);
+    }
     public void EndGame()
     {
         if (gameState == false)
